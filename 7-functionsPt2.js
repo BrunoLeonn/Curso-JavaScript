@@ -1,3 +1,4 @@
+// Tipos de Funçao
 // Para dar certo o function precisa estar antes de todos os objetos:
 
 // # Primeira maneira de declarar função
