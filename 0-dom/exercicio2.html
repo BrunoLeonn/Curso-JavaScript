@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #cubo {
+            position: absolute;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            top: 150px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adicione o texto no cubo</h1>
+    <div id="cubo"></div>
+    <input type="text" id="txt">
+    <button onclick="alterar()">Adicionar Texto</button>
+</body>
+<script>
+    function alterar(){
+        let obj1 = document.getElementById("cubo");
+        let txt1 = document.getElementById("txt");
+    obj1.innerHTML = `(${txt1.value})`;
+    }
+</script>
+</html>
