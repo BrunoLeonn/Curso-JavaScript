@@ -79,3 +79,19 @@
             default: // se não for: esperando o próximo final de semana(segunda a sexta)
                 text = "Looking forward to the Weekend";
     }
+
+    //  Estruturas de Repetição
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    let text = "";
+    for (let i = 0; i < cars.length; i++){
+        //let i = 0( valor inicial );   -> Começa com i valendo 0
+        //i < cars.lenght ( condição ); -> E quando for menor que o tamanho do vetor
+        // i++ ( entrelinha )   ->  Incrementando de 1 em 1
+        text += cars[i] + "<br>";
+        // E para cada passo: acrescente um texto(text) com incremento naquela posição em vetor(cars[i])
+        //
+    }
+    DocumentFragment.getElementById("demo").innerHTML = text;
+
+    //  For in  e   For of
+    //  For in serve para organizar os indices de um vetor
